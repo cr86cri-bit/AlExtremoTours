@@ -152,13 +152,15 @@
 }
 
 .experiences,
-.trust {
+.trust,
+.location {
   padding: 96px 0;
 }
 
 .intro-grid,
 .contact-grid,
-.trust {
+.trust,
+.location-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 56px;
@@ -173,12 +175,13 @@
 .feature-grid,
 .package-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
 .intro-grid p,
 .contact-grid p,
+.location-grid p,
 .feature-card p,
 .package-card p,
 .package-card li,

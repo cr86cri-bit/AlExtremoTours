@@ -112,6 +112,7 @@
 
   .intro-grid,
   .contact-grid,
+  .location-grid,
   .trust,
   .feature-grid,
   .package-grid,
@@ -122,6 +123,7 @@
   .intro,
   .packages,
   .contact,
+  .location,
   .experiences,
   .trust {
     padding: 68px 0;
@@ -129,8 +131,29 @@
 
   .stats div {
     min-height: 116px;
-    border-left: 0;
-    border-top: 1px solid var(--line);
+  }
+
+  .map-canvas {
+    min-height: 380px;
+  }
+
+  .map-label {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .package-grid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -329,9 +329,11 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--woven-red), var(--accent), var(--sky));
+  background:
+    linear-gradient(180deg, rgba(27, 17, 12, 0.78), rgba(27, 17, 12, 0.92)),
+    url("../assets/images/aguayo-card-bg.png") center / cover;
   color: #fffaf1;
-  border: 1px solid rgba(255, 244, 223, 0.24);
+  border: 1px solid rgba(255, 244, 223, 0.34);
 }
 
 .btn-secondary {
@@ -413,6 +415,19 @@
   color: #fff7e5;
 }
 
+.feature-card h3,
+.package-card h3,
+.contact-card strong {
+  color: #fffaf1;
+}
+
+.feature-card p,
+.package-card p,
+.package-card li {
+  color: rgba(255, 250, 241, 0.82);
+  font-weight: 500;
+}
+
 .feature-card::before,
 .package-card::before {
   content: "";
@@ -480,18 +495,17 @@
 }
 
 .package-card {
-  min-height: 390px;
-  padding: 30px;
+  min-height: 430px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .package-highlight {
-  border-color: rgba(155, 27, 18, 0.28);
+  border-color: var(--line);
   background:
-    linear-gradient(135deg, rgba(242, 183, 5, 0.2), rgba(27, 17, 12, 0.78) 42%, rgba(19, 138, 157, 0.2)),
-    linear-gradient(180deg, rgba(27, 17, 12, 0.68), rgba(27, 17, 12, 0.92)),
+    linear-gradient(180deg, rgba(27, 17, 12, 0.78), rgba(27, 17, 12, 0.92)),
     url("../assets/images/aguayo-card-bg.png") center / cover;
 }
 
@@ -535,16 +549,124 @@
   flex-direction: column;
   justify-content: center;
   padding: 22px;
-  border-left: 1px solid var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(27, 17, 12, 0.78), rgba(27, 17, 12, 0.92)),
+    url("../assets/images/aguayo-card-bg.png") center / cover;
 }
 
 .stats strong {
   display: block;
   margin-bottom: 8px;
-  color: var(--accent-strong);
+  color: var(--accent);
   font-family: "Cormorant Garamond", serif;
   font-size: 3rem;
   line-height: 1;
+}
+
+.stats span {
+  color: rgba(255, 250, 241, 0.82);
+  font-weight: 600;
+}
+
+.map-link {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 18px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 244, 223, 0.34);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(27, 17, 12, 0.78), rgba(27, 17, 12, 0.92)),
+    url("../assets/images/aguayo-card-bg.png") center / cover;
+  color: #fffaf1;
+  font-weight: 800;
+}
+
+.map-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(27, 17, 12, 0.78), rgba(27, 17, 12, 0.92)),
+    url("../assets/images/aguayo-card-bg.png") center / cover;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.map-canvas {
+  position: relative;
+  min-height: 470px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: rgba(27, 17, 12, 0.72);
+}
+
+.map-canvas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  border: var(--map-outline-size) solid var(--map-outline-color);
+  box-shadow:
+    inset 0 0 0 1px var(--map-outline-accent),
+    inset 0 -70px 0 rgba(27, 17, 12, 0.46);
+}
+
+.map-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 2;
+  height: 8px;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--woven-red) 0 18px,
+    var(--woven-orange) 18px 36px,
+    var(--accent) 36px 54px,
+    var(--leaf) 54px 72px,
+    var(--sky) 72px 90px,
+    var(--woven-blue) 90px 108px,
+    var(--woven-violet) 108px 126px
+  );
+}
+
+.map-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: saturate(0.72) contrast(0.96);
+}
+
+.map-label {
+  position: absolute;
+  z-index: 3;
+  left: 24px;
+  right: 24px;
+  bottom: 22px;
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 250, 241, 0.24);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(90deg, rgba(177, 18, 38, 0.18), transparent 34%, rgba(242, 183, 5, 0.12)),
+    rgba(27, 17, 12, 0.9);
+  color: #fffaf1;
+}
+
+.map-label strong {
+  font-size: 1rem;
+}
+
+.map-label span {
+  color: rgba(255, 250, 241, 0.74);
+  font-size: 0.78rem;
 }
 
 .contact-card {
@@ -589,13 +711,27 @@
   display: grid;
   place-items: center;
   border-radius: 50%;
-  border: 3px solid #251712;
-  background: linear-gradient(135deg, #b11226 0%, #e46d1f 42%, #f2b705 72%, #138a9d 100%);
+  border: 4px solid #251712;
+  background:
+    linear-gradient(180deg, rgba(27, 17, 12, 0.78), rgba(27, 17, 12, 0.92)),
+    url("../assets/images/aguayo-card-bg.png") center / cover;
   color: #fffaf1;
   box-shadow: none;
 }
 
+.floating-whatsapp::before {
+  content: "";
+  position: absolute;
+  inset: 13px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 250, 241, 0.22);
+  background: rgba(27, 17, 12, 0.28);
+}
+
 .floating-whatsapp svg {
-  width: 46px;
-  height: 46px;
+  position: relative;
+  z-index: 1;
+  width: 42px;
+  height: 42px;
+  stroke-width: 2.15;
 }

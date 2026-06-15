@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Tours al Salar de Uyuni, Bolivia, con una estetica andina inspirada en el altiplano, la wiphala y los colores del aguayo.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; frame-src https://www.google.com https://maps.google.com; form-action 'none'; upgrade-insecure-requests">
   <title data-i18n="meta.title">Extremo Tours | Salar de Uyuni</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +37,7 @@
       <div class="nav-links" data-nav-links>
         <a href="#experiencias" data-i18n="nav.experiences">Experiencias</a>
         <a href="#paquetes" data-i18n="nav.packages">Paquetes</a>
+        <a href="#ubicacion" data-i18n="nav.location">Ubicacion</a>
         <a href="#contacto" data-i18n="nav.contact">Contacto</a>
       </div>
 
@@ -98,7 +99,8 @@
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://wa.me/59163066882?text=Hola%2C%20quiero%20informacion%20sobre%20tours%20al%20Salar%20de%20Uyuni" target="_blank" rel="noopener noreferrer" data-whatsapp-link="info">
             <svg class="icon icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M12.04 3.2a8.76 8.76 0 0 0-7.48 13.33l-.96 3.5 3.58-.94a8.75 8.75 0 1 0 4.86-15.89Zm0 1.64a7.11 7.11 0 1 1-3.62 13.23l-.25-.15-2.13.56.57-2.08-.16-.27a7.11 7.11 0 0 1 5.59-11.29Zm-3.12 3.8c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.23.9 2.42 1.03 2.59.13.16 1.76 2.7 4.31 3.68 2.13.84 2.57.67 3.03.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.16-.48-.29l-1.68-.82c-.23-.09-.4-.14-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44l-.75-1.81c-.2-.45-.4-.44-.56-.45h-.17Z"></path>
+              <path d="M5.2 18.8 6 15.9a7.1 7.1 0 1 1 2.1 2.1l-2.9.8Z"></path>
+              <path d="M9.3 8.7c-.2.3-.6.8-.6 1.5 0 1.7 2.2 4.2 5.1 5.1.7.2 1.3-.4 1.6-.8l.2-.4-1.6-.8-.5.6c-.2.2-.4.2-.7.1-1.1-.4-2.3-1.5-2.8-2.7-.1-.3-.1-.5.1-.7l.5-.5-.8-1.6-.5.2Z"></path>
             </svg>
             <span data-i18n="buttons.whatsapp">WhatsApp</span>
           </a>
@@ -183,6 +185,19 @@
           <h3 data-i18n="features.sunset.title">Atardecer andino</h3>
           <p data-i18n="features.sunset.copy">Una pausa final para ver como la luz cambia el Salar y pinta el horizonte con tonos de aguayo.</p>
         </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 16h16"></path>
+              <path d="M7 16V9l4-3h6v10"></path>
+              <path d="M8 19h1.5M14.5 19H16"></path>
+              <path d="M6.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM17.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+            </svg>
+          </span>
+          <span class="feature-number">04</span>
+          <h3 data-i18n="features.train.title">Cementerio de trenes</h3>
+          <p data-i18n="features.train.copy">Historia ferroviaria, estructuras antiguas y una parada clasica para comenzar la ruta por Uyuni.</p>
+        </article>
       </div>
     </section>
 
@@ -196,40 +211,61 @@
         <div class="package-grid">
           <article class="package-card">
             <div>
-              <p class="package-label" data-i18n="packages.classic.label">Full day</p>
-              <h3 data-i18n="packages.classic.title">Salar Clasico</h3>
-              <p data-i18n="packages.classic.copy">Ideal para conocer los puntos principales en una jornada bien aprovechada.</p>
+              <p class="package-label" data-i18n="packages.classic.label">Ruta Uyuni</p>
+              <h3 data-i18n="packages.classic.title">Plan 1 dia</h3>
+              <p data-i18n="packages.classic.copy">Incluye alimentacion durante el tour: 1 almuerzo.</p>
             </div>
             <ul>
-              <li data-i18n="packages.classic.item1">Cementerio de trenes</li>
-              <li data-i18n="packages.classic.item2">Ojos de sal y monticulos</li>
-              <li data-i18n="packages.classic.item3">Atardecer en el Salar</li>
+              <li data-i18n="packages.classic.item1">Comida vegetariana si el cliente lo desea.</li>
+              <li data-i18n="packages.classic.item2">Transporte compartido en vagonetas 4x4.</li>
+              <li data-i18n="packages.classic.item3">Equipo de primeros auxilios.</li>
+              <li data-i18n="packages.classic.item4">Chofer/guia en espanol.</li>
+              <li data-i18n="packages.classic.item5">Botas de agua en epoca de lluvia.</li>
             </ul>
           </article>
 
           <article class="package-card package-highlight">
             <div>
-              <p class="package-label" data-i18n="packages.essential.label">Recomendado</p>
-              <h3 data-i18n="packages.essential.title">Salar Esencial</h3>
-              <p data-i18n="packages.essential.copy">Una ruta equilibrada para vivir paisaje, cultura local y tiempo suficiente para fotografias.</p>
+              <p class="package-label" data-i18n="packages.essential.label">Ruta Uyuni</p>
+              <h3 data-i18n="packages.essential.title">Plan 2 dias</h3>
+              <p data-i18n="packages.essential.copy">Incluye alimentacion durante el tour: 2 almuerzos, 1 cena y 1 desayuno.</p>
             </div>
             <ul>
-              <li data-i18n="packages.essential.item1">Transporte 4x4</li>
-              <li data-i18n="packages.essential.item2">Paradas fotograficas guiadas</li>
-              <li data-i18n="packages.essential.item3">Asesoria antes del viaje</li>
+              <li data-i18n="packages.essential.item1">Comida vegetariana si el cliente lo desea.</li>
+              <li data-i18n="packages.essential.item2">Transporte compartido en vagonetas 4x4.</li>
+              <li data-i18n="packages.essential.item3">Equipo de primeros auxilios.</li>
+              <li data-i18n="packages.essential.item4">Chofer/guia en espanol.</li>
+              <li data-i18n="packages.essential.item5">Botas de agua en epoca de lluvia.</li>
             </ul>
           </article>
 
           <article class="package-card">
             <div>
-              <p class="package-label" data-i18n="packages.private.label">Privado</p>
-              <h3 data-i18n="packages.private.title">Ruta a Medida</h3>
-              <p data-i18n="packages.private.copy">Para parejas, familias o grupos que buscan un itinerario mas flexible.</p>
+              <p class="package-label" data-i18n="packages.private.label">Ruta Uyuni</p>
+              <h3 data-i18n="packages.private.title">Plan 3 dias / 2 noches</h3>
+              <p data-i18n="packages.private.copy">Incluye alimentacion durante el tour: 3 almuerzos, 2 cenas y 2 desayunos.</p>
             </div>
             <ul>
-              <li data-i18n="packages.private.item1">Horarios coordinados</li>
-              <li data-i18n="packages.private.item2">Paradas personalizadas</li>
-              <li data-i18n="packages.private.item3">Soporte directo</li>
+              <li data-i18n="packages.private.item1">Comida vegetariana si el cliente lo desea.</li>
+              <li data-i18n="packages.private.item2">Transporte compartido en vagonetas 4x4.</li>
+              <li data-i18n="packages.private.item3">Equipo de primeros auxilios.</li>
+              <li data-i18n="packages.private.item4">Chofer/guia en espanol.</li>
+              <li data-i18n="packages.private.item5">Botas de agua en epoca de lluvia.</li>
+            </ul>
+          </article>
+
+          <article class="package-card">
+            <div>
+              <p class="package-label" data-i18n="packages.sanpedro.label">Ruta Uyuni</p>
+              <h3 data-i18n="packages.sanpedro.title">Plan 4 dias</h3>
+              <p data-i18n="packages.sanpedro.copy">Incluye alimentacion durante el tour: 4 almuerzos, 3 cenas y 3 desayunos.</p>
+            </div>
+            <ul>
+              <li data-i18n="packages.sanpedro.item1">Comida vegetariana si el cliente lo desea.</li>
+              <li data-i18n="packages.sanpedro.item2">Transporte compartido en vagonetas 4x4.</li>
+              <li data-i18n="packages.sanpedro.item3">Equipo de primeros auxilios.</li>
+              <li data-i18n="packages.sanpedro.item4">Chofer/guia en espanol.</li>
+              <li data-i18n="packages.sanpedro.item5">Botas de agua en epoca de lluvia.</li>
             </ul>
           </article>
         </div>
@@ -257,6 +293,32 @@
       </div>
     </section>
 
+    <section class="location section-band" id="ubicacion">
+      <div class="section-inner location-grid">
+        <div>
+          <p class="section-kicker" data-i18n="location.kicker">Ubicacion</p>
+          <h2 data-i18n="location.title">Al Extremo Oficina de Tours.</h2>
+          <p data-i18n="location.copy">Nos encuentras en Av. Ferroviaria, entre Sucre y Av. Potosi, un punto practico para coordinar salidas y encuentros antes del tour.</p>
+          <a class="map-link" href="https://www.google.com/maps?cid=11427137662459774916" target="_blank" rel="noopener noreferrer" data-i18n="location.link">Abrir en Google Maps</a>
+        </div>
+        <div class="map-card" aria-label="Mapa fijo de ubicacion en Uyuni">
+          <div class="map-canvas">
+            <iframe
+              class="map-frame"
+              title="Mapa de ubicacion en Uyuni"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.1708367888566!2d-66.82369436538066!3d-20.461995465532077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93ffbad859d751db%3A0x9e955929126707c4!2sAl%20Extremo%20Tours!5e1!3m2!1ses-419!2sbo!4v1781511115623!5m2!1ses-419!2sbo"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-label">
+              <strong data-i18n="location.pin">Al Extremo Oficina de Tours</strong>
+              <span data-i18n="location.address">Av. Ferroviaria, Sucre y Av. Potosi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="contact section-band" id="contacto">
       <div class="section-inner contact-grid">
         <div>
@@ -266,7 +328,8 @@
         </div>
         <a class="contact-card" href="https://wa.me/59163066882?text=Hola%2C%20quiero%20reservar%20un%20tour%20al%20Salar%20de%20Uyuni" target="_blank" rel="noopener noreferrer" data-whatsapp-link="booking">
           <svg class="contact-icon icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M12.04 3.2a8.76 8.76 0 0 0-7.48 13.33l-.96 3.5 3.58-.94a8.75 8.75 0 1 0 4.86-15.89Zm0 1.64a7.11 7.11 0 1 1-3.62 13.23l-.25-.15-2.13.56.57-2.08-.16-.27a7.11 7.11 0 0 1 5.59-11.29Zm-3.12 3.8c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.23.9 2.42 1.03 2.59.13.16 1.76 2.7 4.31 3.68 2.13.84 2.57.67 3.03.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.16-.48-.29l-1.68-.82c-.23-.09-.4-.14-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44l-.75-1.81c-.2-.45-.4-.44-.56-.45h-.17Z"></path>
+            <path d="M5.2 18.8 6 15.9a7.1 7.1 0 1 1 2.1 2.1l-2.9.8Z"></path>
+            <path d="M9.3 8.7c-.2.3-.6.8-.6 1.5 0 1.7 2.2 4.2 5.1 5.1.7.2 1.3-.4 1.6-.8l.2-.4-1.6-.8-.5.6c-.2.2-.4.2-.7.1-1.1-.4-2.3-1.5-2.8-2.7-.1-.3-.1-.5.1-.7l.5-.5-.8-1.6-.5.2Z"></path>
           </svg>
           <span data-i18n="contact.whatsapp">WhatsApp</span>
           <strong>+591 63066882</strong>
@@ -278,7 +341,8 @@
 
   <a class="floating-whatsapp" href="https://wa.me/59163066882?text=Hola%2C%20necesito%20informacion%20sobre%20tours%20al%20Salar%20de%20Uyuni" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" data-whatsapp-link="floating">
     <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path d="M12.04 3.2a8.76 8.76 0 0 0-7.48 13.33l-.96 3.5 3.58-.94a8.75 8.75 0 1 0 4.86-15.89Zm0 1.64a7.11 7.11 0 1 1-3.62 13.23l-.25-.15-2.13.56.57-2.08-.16-.27a7.11 7.11 0 0 1 5.59-11.29Zm-3.12 3.8c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.23.9 2.42 1.03 2.59.13.16 1.76 2.7 4.31 3.68 2.13.84 2.57.67 3.03.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.16-.48-.29l-1.68-.82c-.23-.09-.4-.14-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44l-.75-1.81c-.2-.45-.4-.44-.56-.45h-.17Z"></path>
+      <path d="M5.2 18.8 6 15.9a7.1 7.1 0 1 1 2.1 2.1l-2.9.8Z"></path>
+      <path d="M9.3 8.7c-.2.3-.6.8-.6 1.5 0 1.7 2.2 4.2 5.1 5.1.7.2 1.3-.4 1.6-.8l.2-.4-1.6-.8-.5.6c-.2.2-.4.2-.7.1-1.1-.4-2.3-1.5-2.8-2.7-.1-.3-.1-.5.1-.7l.5-.5-.8-1.6-.5.2Z"></path>
     </svg>
   </a>
 
