@@ -1,0 +1,164 @@
+:root {
+  color-scheme: light;
+  --bg: #fbf1df;
+  --surface: #fff7e8;
+  --surface-strong: #fffcf4;
+  --text: #251712;
+  --muted: #715f52;
+  --line: rgba(84, 43, 26, 0.18);
+  --accent: #f2b705;
+  --accent-strong: #9b1b12;
+  --accent-soft: #ffe0a3;
+  --earth: #7a3e18;
+  --sky: #138a9d;
+  --leaf: #3f7d20;
+  --woven-red: #b11226;
+  --woven-orange: #e46d1f;
+  --woven-blue: #143d8f;
+  --woven-violet: #5b2a86;
+  --ink-on-dark: #fffaf1;
+  --shadow: none;
+  --radius: 8px;
+  --header-height: 76px;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #130d0a;
+  --surface: #1d1510;
+  --surface-strong: #2a1c14;
+  --text: #fff4df;
+  --muted: #d0bca3;
+  --line: rgba(255, 244, 223, 0.14);
+  --accent: #f2b705;
+  --accent-strong: #ffd86b;
+  --accent-soft: #3a2410;
+  --earth: #d28a3d;
+  --sky: #5bc5d4;
+  --leaf: #8fbe45;
+  --ink-on-dark: #fffaf1;
+  --shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(155, 27, 18, 0.05) 25%, transparent 25%) 0 0 / 28px 28px,
+    linear-gradient(315deg, rgba(19, 138, 157, 0.045) 25%, transparent 25%) 0 0 / 28px 28px,
+    var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 80;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    #d71920 0 12.5%,
+    #f36f21 12.5% 25%,
+    #ffd400 25% 37.5%,
+    #3aaa35 37.5% 50%,
+    #00a6de 50% 62.5%,
+    #2d3192 62.5% 75%,
+    #6f2da8 75% 87.5%,
+    #ffffff 87.5% 100%
+  );
+  pointer-events: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  line-height: 0.98;
+}
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-size: clamp(3.25rem, 8vw, 7rem);
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: clamp(2.2rem, 5vw, 4.25rem);
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.eyebrow,
+.section-kicker,
+.package-label {
+  margin: 0 0 12px;
+  color: var(--accent-strong);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.icon,
+.mode-icon svg,
+.feature-icon svg,
+.contact-icon,
+.floating-whatsapp svg,
+.carousel-btn svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.65;
+  vector-effect: non-scaling-stroke;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.icon-whatsapp {
+  fill: currentColor;
+  stroke: none;
+}
+
+.icon-lines {
+  stroke-width: 1.5;
+}

@@ -1,0 +1,201 @@
+.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: var(--header-height);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(90deg, rgba(155, 27, 18, 0.18), transparent 24%, rgba(19, 138, 157, 0.14)),
+    rgba(27, 16, 10, 0.9);
+  color: #fffaf1;
+}
+
+.nav {
+  width: min(1160px, calc(100% - 32px));
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  color: var(--ink-on-dark);
+  padding: calc(var(--header-height) + 58px) 0 96px;
+}
+
+.hero-carousel,
+.hero-image,
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-image,
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image {
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 900ms ease, transform 6000ms ease;
+}
+
+.hero-image.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.hero-overlay {
+  background:
+    linear-gradient(135deg, rgba(215, 25, 32, 0.12) 0 10%, transparent 10% 20%, rgba(242, 183, 5, 0.12) 20% 30%, transparent 30% 100%),
+    linear-gradient(90deg, rgba(28, 13, 7, 0.82) 0%, rgba(28, 13, 7, 0.5) 45%, rgba(28, 13, 7, 0.1) 100%),
+    linear-gradient(0deg, rgba(28, 13, 7, 0.46), rgba(28, 13, 7, 0.08));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(1160px, calc(100% - 32px));
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.hero-content::before {
+  content: "";
+  width: 132px;
+  height: 8px;
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 2px;
+  background:
+    linear-gradient(90deg, #d71920 0 14%, #f36f21 14% 28%, #ffd400 28% 42%, #3aaa35 42% 56%, #00a6de 56% 70%, #2d3192 70% 84%, #6f2da8 84% 100%);
+}
+
+.hero .eyebrow {
+  color: #f1c98c;
+}
+
+.hero-copy {
+  max-width: 640px;
+  margin-bottom: 32px;
+  color: rgba(255, 250, 241, 0.84);
+  font-size: 1.08rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.section-inner {
+  width: min(1160px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.section-band {
+  background:
+    linear-gradient(90deg, rgba(215, 25, 32, 0.07), transparent 16%, rgba(19, 138, 157, 0.08) 84%, rgba(242, 183, 5, 0.08)),
+    linear-gradient(180deg, rgba(242, 183, 5, 0.08), transparent 44%),
+    var(--surface);
+}
+
+.intro,
+.packages,
+.contact {
+  position: relative;
+  padding: 84px 0;
+}
+
+.intro::before,
+.packages::before,
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 10px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      var(--woven-red) 0 16px,
+      var(--woven-orange) 16px 32px,
+      var(--accent) 32px 48px,
+      var(--leaf) 48px 64px,
+      var(--sky) 64px 80px,
+      var(--woven-blue) 80px 96px,
+      var(--woven-violet) 96px 112px
+    );
+  opacity: 0.86;
+}
+
+.experiences,
+.trust {
+  padding: 96px 0;
+}
+
+.intro-grid,
+.contact-grid,
+.trust {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.section-heading {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+.feature-grid,
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.intro-grid p,
+.contact-grid p,
+.feature-card p,
+.package-card p,
+.package-card li,
+.stats span {
+  color: var(--muted);
+}
+
+.footer {
+  padding: 26px 16px;
+  text-align: center;
+  background:
+    linear-gradient(90deg, #d71920 0 12.5%, #f36f21 12.5% 25%, #ffd400 25% 37.5%, #3aaa35 37.5% 50%, #00a6de 50% 62.5%, #2d3192 62.5% 75%, #6f2da8 75% 87.5%, #1a100b 87.5% 100%) top / 100% 5px no-repeat,
+    var(--text);
+  color: var(--bg);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}

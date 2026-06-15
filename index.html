@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tours al Salar de Uyuni, Bolivia, con una estetica andina inspirada en el altiplano, la wiphala y los colores del aguayo.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; upgrade-insecure-requests">
+  <title data-i18n="meta.title">Extremo Tours | Salar de Uyuni</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegacion principal">
+      <a class="brand" href="#inicio" aria-label="Extremo Tours inicio">
+        <span class="brand-logo">
+          <img src="assets/logo/extremo-tours-logo.jpg" alt="Extremo Tours">
+        </span>
+        <span>
+          <strong>Extremo Tours</strong>
+          <small data-i18n="brand.location">Uyuni, Bolivia</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" data-nav-links>
+        <a href="#experiencias" data-i18n="nav.experiences">Experiencias</a>
+        <a href="#paquetes" data-i18n="nav.packages">Paquetes</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </div>
+
+      <div class="nav-actions" aria-label="Opciones de pagina">
+        <div class="language-picker" data-language-picker>
+          <button class="language-button" type="button" data-language-button aria-haspopup="listbox" aria-expanded="false" aria-label="Elegir idioma">
+            <span class="flag flag-es" data-language-flag aria-hidden="true"></span>
+            <span class="language-current" data-language-current>ES</span>
+            <svg class="language-chevron" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m7 10 5 5 5-5"></path>
+            </svg>
+          </button>
+          <div class="language-menu" data-language-menu role="listbox" aria-label="Idiomas">
+            <button class="language-option" type="button" data-language-option="es" role="option" aria-selected="true">
+              <span class="flag flag-es" aria-hidden="true"></span>
+              <span>ES</span>
+            </button>
+            <button class="language-option" type="button" data-language-option="en" role="option" aria-selected="false">
+              <span class="flag flag-us" aria-hidden="true"></span>
+              <span>EN</span>
+            </button>
+            <button class="language-option" type="button" data-language-option="pt" role="option" aria-selected="false">
+              <span class="flag flag-br" aria-hidden="true"></span>
+              <span>PT</span>
+            </button>
+          </div>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Cambiar modo claro u oscuro" title="Cambiar tema">
+          <span class="mode-icon mode-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v3M12 19v3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M2 12h3M19 12h3M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"></path>
+            </svg>
+          </span>
+          <span class="mode-icon mode-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M20 14.4A7.6 7.6 0 0 1 9.6 4a8.4 8.4 0 1 0 10.4 10.4Z"></path>
+              <path d="M15.8 4.4l.5 1.2 1.2.5-1.2.5-.5 1.2-.5-1.2-1.2-.5 1.2-.5.5-1.2Z"></path>
+            </svg>
+          </span>
+          <span class="theme-knob" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-carousel" aria-label="Galeria principal del Salar de Uyuni">
+        <img class="hero-image is-active" src="assets/images/salar-uyuni-hero.png" alt="Paisaje del Salar de Uyuni reflejando el cielo al amanecer">
+        <img class="hero-image" src="assets/images/salar-uyuni-patterns.png" alt="Texturas blancas del Salar de Uyuni bajo un cielo despejado">
+        <img class="hero-image" src="assets/images/salar-uyuni-sunset.png" alt="Vehiculo 4x4 recorriendo el Salar de Uyuni al atardecer">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Uyuni, altiplano y memoria andina</p>
+        <h1 data-i18n="hero.title">Salar de Uyuni con alma de los Andes.</h1>
+        <p class="hero-copy" data-i18n="hero.copy">Recorridos privados y compartidos entre espejos de sal, tejidos de color, rutas altoandinas y atardeceres que nacen en el corazon de Uyuni.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/59163066882?text=Hola%2C%20quiero%20informacion%20sobre%20tours%20al%20Salar%20de%20Uyuni" target="_blank" rel="noopener noreferrer" data-whatsapp-link="info">
+            <svg class="icon icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12.04 3.2a8.76 8.76 0 0 0-7.48 13.33l-.96 3.5 3.58-.94a8.75 8.75 0 1 0 4.86-15.89Zm0 1.64a7.11 7.11 0 1 1-3.62 13.23l-.25-.15-2.13.56.57-2.08-.16-.27a7.11 7.11 0 0 1 5.59-11.29Zm-3.12 3.8c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.23.9 2.42 1.03 2.59.13.16 1.76 2.7 4.31 3.68 2.13.84 2.57.67 3.03.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.16-.48-.29l-1.68-.82c-.23-.09-.4-.14-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44l-.75-1.81c-.2-.45-.4-.44-.56-.45h-.17Z"></path>
+            </svg>
+            <span data-i18n="buttons.whatsapp">WhatsApp</span>
+          </a>
+          <a class="btn btn-secondary" href="#paquetes">
+            <svg class="icon icon-lines" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 7h16M4 12h16M4 17h10"></path>
+            </svg>
+            <span data-i18n="buttons.packages">Ver paquetes</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-controls" aria-label="Controles de galeria">
+        <button class="carousel-btn" type="button" data-carousel-prev aria-label="Imagen anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </button>
+        <div class="carousel-dots" aria-label="Seleccionar imagen">
+          <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Ver imagen 1"></button>
+          <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Ver imagen 2"></button>
+          <button class="carousel-dot" type="button" data-carousel-dot="2" aria-label="Ver imagen 3"></button>
+        </div>
+        <button class="carousel-btn" type="button" data-carousel-next aria-label="Imagen siguiente">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="intro section-band" aria-label="Resumen de servicios">
+      <div class="section-inner intro-grid">
+        <div>
+          <p class="section-kicker" data-i18n="intro.kicker">Viajes con identidad</p>
+          <h2 data-i18n="intro.title">Una ruta andina, organizada con detalle.</h2>
+        </div>
+        <p data-i18n="intro.copy">Desde la primera consulta hasta el retorno, coordinamos horarios, transporte, paradas fotograficas y recomendaciones para que el Salar se sienta inmenso, cercano y profundamente uyunense.</p>
+      </div>
+    </section>
+
+    <section class="section-inner experiences" id="experiencias">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="experiences.kicker">Experiencias</p>
+        <h2 data-i18n="experiences.title">Momentos esenciales del altiplano</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M3 15c3-2 6-2 9 0s6 2 9 0"></path>
+              <path d="M4 18c2.7-1.4 5.3-1.4 8 0s5.3 1.4 8 0"></path>
+              <path d="M7 9h10"></path>
+            </svg>
+          </span>
+          <span class="feature-number">01</span>
+          <h3 data-i18n="features.mirror.title">Espejo de sal</h3>
+          <p data-i18n="features.mirror.copy">Temporada de reflejos con paradas cuidadas para fotografia, caminatas suaves y cielo abierto.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 21V6"></path>
+              <path d="M12 10c-4 0-5-2.5-5-5"></path>
+              <path d="M12 14c4 0 5-2.5 5-5"></path>
+              <path d="M8 21h8"></path>
+            </svg>
+          </span>
+          <span class="feature-number">02</span>
+          <h3 data-i18n="features.incahuasi.title">Isla Incahuasi</h3>
+          <p data-i18n="features.incahuasi.copy">Cactus centenarios, senderos panoramicos y una vista completa del blanco infinito del altiplano.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 17h16"></path>
+              <path d="M7 13a5 5 0 0 1 10 0"></path>
+              <path d="M12 3v3M4.9 5.9 7 8M19.1 5.9 17 8"></path>
+            </svg>
+          </span>
+          <span class="feature-number">03</span>
+          <h3 data-i18n="features.sunset.title">Atardecer andino</h3>
+          <p data-i18n="features.sunset.copy">Una pausa final para ver como la luz cambia el Salar y pinta el horizonte con tonos de aguayo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="packages section-band" id="paquetes">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="packages.kicker">Paquetes</p>
+          <h2 data-i18n="packages.title">Elige tu ruta</h2>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card">
+            <div>
+              <p class="package-label" data-i18n="packages.classic.label">Full day</p>
+              <h3 data-i18n="packages.classic.title">Salar Clasico</h3>
+              <p data-i18n="packages.classic.copy">Ideal para conocer los puntos principales en una jornada bien aprovechada.</p>
+            </div>
+            <ul>
+              <li data-i18n="packages.classic.item1">Cementerio de trenes</li>
+              <li data-i18n="packages.classic.item2">Ojos de sal y monticulos</li>
+              <li data-i18n="packages.classic.item3">Atardecer en el Salar</li>
+            </ul>
+          </article>
+
+          <article class="package-card package-highlight">
+            <div>
+              <p class="package-label" data-i18n="packages.essential.label">Recomendado</p>
+              <h3 data-i18n="packages.essential.title">Salar Esencial</h3>
+              <p data-i18n="packages.essential.copy">Una ruta equilibrada para vivir paisaje, cultura local y tiempo suficiente para fotografias.</p>
+            </div>
+            <ul>
+              <li data-i18n="packages.essential.item1">Transporte 4x4</li>
+              <li data-i18n="packages.essential.item2">Paradas fotograficas guiadas</li>
+              <li data-i18n="packages.essential.item3">Asesoria antes del viaje</li>
+            </ul>
+          </article>
+
+          <article class="package-card">
+            <div>
+              <p class="package-label" data-i18n="packages.private.label">Privado</p>
+              <h3 data-i18n="packages.private.title">Ruta a Medida</h3>
+              <p data-i18n="packages.private.copy">Para parejas, familias o grupos que buscan un itinerario mas flexible.</p>
+            </div>
+            <ul>
+              <li data-i18n="packages.private.item1">Horarios coordinados</li>
+              <li data-i18n="packages.private.item2">Paradas personalizadas</li>
+              <li data-i18n="packages.private.item3">Soporte directo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-inner trust">
+      <div class="trust-copy">
+        <p class="section-kicker" data-i18n="trust.kicker">Por que elegirnos</p>
+        <h2 data-i18n="trust.title">Atencion cercana, ruta clara y respeto por el territorio.</h2>
+      </div>
+      <div class="stats" aria-label="Datos destacados">
+        <div>
+          <strong>4x4</strong>
+          <span data-i18n="stats.transport">Transporte para terreno altoandino</span>
+        </div>
+        <div>
+          <strong>24h</strong>
+          <span data-i18n="stats.response">Respuesta por WhatsApp</span>
+        </div>
+        <div>
+          <strong>360&deg;</strong>
+          <span data-i18n="stats.photo">Paisajes para fotografia</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-band" id="contacto">
+      <div class="section-inner contact-grid">
+        <div>
+          <p class="section-kicker" data-i18n="contact.kicker">Reserva directa</p>
+          <h2 data-i18n="contact.title">Hablemos de tu viaje por el Salar de Uyuni.</h2>
+          <p data-i18n="contact.copy">Escribenos para consultar disponibilidad, horarios y recomendaciones de temporada. Te respondera el encargado para coordinar los detalles con trato cercano.</p>
+        </div>
+        <a class="contact-card" href="https://wa.me/59163066882?text=Hola%2C%20quiero%20reservar%20un%20tour%20al%20Salar%20de%20Uyuni" target="_blank" rel="noopener noreferrer" data-whatsapp-link="booking">
+          <svg class="contact-icon icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12.04 3.2a8.76 8.76 0 0 0-7.48 13.33l-.96 3.5 3.58-.94a8.75 8.75 0 1 0 4.86-15.89Zm0 1.64a7.11 7.11 0 1 1-3.62 13.23l-.25-.15-2.13.56.57-2.08-.16-.27a7.11 7.11 0 0 1 5.59-11.29Zm-3.12 3.8c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.23.9 2.42 1.03 2.59.13.16 1.76 2.7 4.31 3.68 2.13.84 2.57.67 3.03.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.16-.48-.29l-1.68-.82c-.23-.09-.4-.14-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44l-.75-1.81c-.2-.45-.4-.44-.56-.45h-.17Z"></path>
+          </svg>
+          <span data-i18n="contact.whatsapp">WhatsApp</span>
+          <strong>+591 63066882</strong>
+          <small data-i18n="contact.cta">Contactar ahora</small>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp" href="https://wa.me/59163066882?text=Hola%2C%20necesito%20informacion%20sobre%20tours%20al%20Salar%20de%20Uyuni" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" data-whatsapp-link="floating">
+    <svg class="icon-whatsapp" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12.04 3.2a8.76 8.76 0 0 0-7.48 13.33l-.96 3.5 3.58-.94a8.75 8.75 0 1 0 4.86-15.89Zm0 1.64a7.11 7.11 0 1 1-3.62 13.23l-.25-.15-2.13.56.57-2.08-.16-.27a7.11 7.11 0 0 1 5.59-11.29Zm-3.12 3.8c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1 0 1.23.9 2.42 1.03 2.59.13.16 1.76 2.7 4.31 3.68 2.13.84 2.57.67 3.03.63.46-.04 1.49-.61 1.7-1.2.21-.59.21-1.09.15-1.2-.06-.1-.23-.16-.48-.29l-1.68-.82c-.23-.09-.4-.14-.57.13-.17.25-.65.82-.8.99-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44l-.75-1.81c-.2-.45-.4-.44-.56-.45h-.17Z"></path>
+    </svg>
+  </a>
+
+  <footer class="footer">
+    <p data-i18n="footer.copy">&copy; 2026 Extremo Tours. Salar de Uyuni, Bolivia.</p>
+  </footer>
+
+  <script defer src="js/theme.js?v=3"></script>
+  <script defer src="js/language.js?v=1"></script>
+  <script defer src="js/menu.js?v=3"></script>
+  <script defer src="js/carousel.js?v=3"></script>
+  <script defer src="js/main.js?v=4"></script>
+</body>
+</html>
