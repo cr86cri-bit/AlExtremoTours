@@ -48,10 +48,14 @@
   }
 
   .language-button {
-    min-width: 76px;
-    width: 76px;
+    min-width: 86px;
+    width: 86px;
     gap: 5px;
     padding: 0 7px;
+  }
+
+  .language-name {
+    display: none;
   }
 
   .language-current {
@@ -66,7 +70,7 @@
   .language-menu {
     right: auto;
     left: 0;
-    width: 118px;
+    width: 154px;
   }
 
   .flag {
@@ -102,8 +106,8 @@
 
   .hero-overlay {
     background:
-      linear-gradient(180deg, rgba(9, 13, 16, 0.74), rgba(9, 13, 16, 0.46) 52%, rgba(9, 13, 16, 0.72)),
-      linear-gradient(90deg, rgba(9, 13, 16, 0.5), rgba(9, 13, 16, 0.1));
+      linear-gradient(180deg, rgba(9, 13, 16, 0.56), rgba(9, 13, 16, 0.3) 52%, rgba(9, 13, 16, 0.58)),
+      linear-gradient(90deg, rgba(9, 13, 16, 0.36), rgba(9, 13, 16, 0.04));
   }
 
   .hero-controls {
@@ -212,7 +216,7 @@
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.45rem;
   }
 
   .hero-copy {

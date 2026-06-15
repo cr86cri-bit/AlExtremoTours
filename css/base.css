@@ -109,9 +109,9 @@ h2 {
 }
 
 h1 {
-  max-width: 760px;
-  margin-bottom: 24px;
-  font-size: clamp(3.25rem, 8vw, 7rem);
+  max-width: 640px;
+  margin-bottom: 20px;
+  font-size: clamp(2.75rem, 5.6vw, 5.35rem);
 }
 
 h2 {

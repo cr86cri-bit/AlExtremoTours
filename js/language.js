@@ -3,6 +3,7 @@ window.initLanguageSelector = function initLanguageSelector() {
   const picker = document.querySelector("[data-language-picker]");
   const trigger = document.querySelector("[data-language-button]");
   const currentLabel = document.querySelector("[data-language-current]");
+  const currentName = document.querySelector("[data-language-name]");
   const currentFlag = document.querySelector("[data-language-flag]");
   const menu = document.querySelector("[data-language-menu]");
   const options = Array.from(document.querySelectorAll("[data-language-option]"));
@@ -13,6 +14,11 @@ window.initLanguageSelector = function initLanguageSelector() {
     es: "ES",
     en: "EN",
     pt: "PT"
+  };
+  const languageNames = {
+    es: "Español",
+    en: "English",
+    pt: "Português"
   };
   const languageFlags = {
     es: "flag-es",
@@ -28,13 +34,13 @@ window.initLanguageSelector = function initLanguageSelector() {
       "nav.packages": "Paquetes",
       "nav.location": "Ubicacion",
       "nav.contact": "Contacto",
-      "hero.eyebrow": "Uyuni, altiplano y memoria andina",
-      "hero.title": "Salar de Uyuni con alma de los Andes.",
-      "hero.copy": "Recorridos privados y compartidos entre espejos de sal, tejidos de color, rutas altoandinas y atardeceres que nacen en el corazon de Uyuni.",
+      "hero.eyebrow": "Uyuni, altiplano y cultura viva",
+      "hero.title": "Salar de Uyuni, Maravilla del mundo.",
+      "hero.copy": "Recorridos privados y compartidos entre espejos de sal, tejidos de color, rutas de altura y atardeceres que nacen en el corazon de Uyuni.",
       "buttons.whatsapp": "WhatsApp",
       "buttons.packages": "Ver paquetes",
       "intro.kicker": "Viajes con identidad",
-      "intro.title": "Una ruta andina, organizada con detalle.",
+      "intro.title": "Una ruta por Uyuni, organizada con detalle.",
       "intro.copy": "Desde la primera consulta hasta el retorno, coordinamos horarios, transporte, paradas fotograficas y recomendaciones para que el Salar se sienta inmenso, cercano y profundamente uyunense.",
       "experiences.kicker": "Experiencias",
       "experiences.title": "Momentos esenciales del altiplano",
@@ -42,7 +48,7 @@ window.initLanguageSelector = function initLanguageSelector() {
       "features.mirror.copy": "Temporada de reflejos con paradas cuidadas para fotografia, caminatas suaves y cielo abierto.",
       "features.incahuasi.title": "Isla Incahuasi",
       "features.incahuasi.copy": "Cactus centenarios, senderos panoramicos y una vista completa del blanco infinito del altiplano.",
-      "features.sunset.title": "Atardecer andino",
+      "features.sunset.title": "Atardecer en el Salar",
       "features.sunset.copy": "Una pausa final para ver como la luz cambia el Salar y pinta el horizonte con tonos de aguayo.",
       "features.train.title": "Cementerio de trenes",
       "features.train.copy": "Historia ferroviaria, estructuras antiguas y una parada clasica para comenzar la ruta por Uyuni.",
@@ -82,7 +88,7 @@ window.initLanguageSelector = function initLanguageSelector() {
       "packages.sanpedro.item5": "Botas de agua en epoca de lluvia.",
       "trust.kicker": "Por que elegirnos",
       "trust.title": "Atencion cercana, ruta clara y respeto por el territorio.",
-      "stats.transport": "Transporte para terreno altoandino",
+      "stats.transport": "Transporte para rutas de altura",
       "stats.response": "Respuesta por WhatsApp",
       "stats.photo": "Paisajes para fotografia",
       "location.kicker": "Ubicacion",
@@ -105,13 +111,13 @@ window.initLanguageSelector = function initLanguageSelector() {
       "nav.packages": "Tours",
       "nav.location": "Location",
       "nav.contact": "Contact",
-      "hero.eyebrow": "Uyuni, highlands and Andean memory",
-      "hero.title": "Uyuni Salt Flat with the soul of the Andes.",
+      "hero.eyebrow": "Uyuni, highlands and living culture",
+      "hero.title": "Uyuni Salt Flat, Wonder of the World.",
       "hero.copy": "Private and shared journeys across salt mirrors, woven colors, highland routes and sunsets born in the heart of Uyuni.",
       "buttons.whatsapp": "WhatsApp",
       "buttons.packages": "View tours",
       "intro.kicker": "Travel with identity",
-      "intro.title": "An Andean route, planned with care.",
+      "intro.title": "A Uyuni route, planned with care.",
       "intro.copy": "From the first message to the return, we coordinate schedules, transport, photo stops and seasonal advice so the Salt Flat feels vast, close and deeply connected to Uyuni.",
       "experiences.kicker": "Experiences",
       "experiences.title": "Essential moments of the highlands",
@@ -119,7 +125,7 @@ window.initLanguageSelector = function initLanguageSelector() {
       "features.mirror.copy": "Reflection season with thoughtful photo stops, gentle walks and open skies.",
       "features.incahuasi.title": "Incahuasi Island",
       "features.incahuasi.copy": "Ancient cacti, panoramic paths and a complete view of the endless white highland.",
-      "features.sunset.title": "Andean sunset",
+      "features.sunset.title": "Sunset over the Salt Flat",
       "features.sunset.copy": "A final pause to watch the light shift across the Salt Flat and paint the horizon with aguayo tones.",
       "features.train.title": "Train cemetery",
       "features.train.copy": "Railway history, old structures and a classic stop to begin the route through Uyuni.",
@@ -182,13 +188,13 @@ window.initLanguageSelector = function initLanguageSelector() {
       "nav.packages": "Pacotes",
       "nav.location": "Localizacao",
       "nav.contact": "Contato",
-      "hero.eyebrow": "Uyuni, altiplano e memoria andina",
-      "hero.title": "Salar de Uyuni com alma dos Andes.",
-      "hero.copy": "Passeios privados e compartilhados entre espelhos de sal, tecidos coloridos, rotas altoandinas e pores do sol que nascem no coracao de Uyuni.",
+      "hero.eyebrow": "Uyuni, altiplano e cultura viva",
+      "hero.title": "Salar de Uyuni, Maravilha do mundo.",
+      "hero.copy": "Passeios privados e compartilhados entre espelhos de sal, tecidos coloridos, rotas de altitude e pores do sol que nascem no coracao de Uyuni.",
       "buttons.whatsapp": "WhatsApp",
       "buttons.packages": "Ver pacotes",
       "intro.kicker": "Viagens com identidade",
-      "intro.title": "Uma rota andina, organizada com cuidado.",
+      "intro.title": "Uma rota por Uyuni, organizada com cuidado.",
       "intro.copy": "Desde a primeira consulta ate o retorno, coordenamos horarios, transporte, paradas fotograficas e recomendacoes de temporada para que o Salar pareca imenso, proximo e profundamente uyunense.",
       "experiences.kicker": "Experiencias",
       "experiences.title": "Momentos essenciais do altiplano",
@@ -196,7 +202,7 @@ window.initLanguageSelector = function initLanguageSelector() {
       "features.mirror.copy": "Temporada de reflexos com paradas cuidadas para fotografia, caminhadas leves e ceu aberto.",
       "features.incahuasi.title": "Ilha Incahuasi",
       "features.incahuasi.copy": "Cactos centenarios, trilhas panoramicas e uma vista completa do branco infinito do altiplano.",
-      "features.sunset.title": "Por do sol andino",
+      "features.sunset.title": "Por do sol no Salar",
       "features.sunset.copy": "Uma pausa final para ver como a luz muda o Salar e pinta o horizonte com tons de aguayo.",
       "features.train.title": "Cemiterio de trens",
       "features.train.copy": "Historia ferroviaria, estruturas antigas e uma parada classica para comecar a rota por Uyuni.",
@@ -236,7 +242,7 @@ window.initLanguageSelector = function initLanguageSelector() {
       "packages.sanpedro.item5": "Botas de agua na epoca de chuva.",
       "trust.kicker": "Por que nos escolher",
       "trust.title": "Atendimento proximo, rota clara e respeito pelo territorio.",
-      "stats.transport": "Transporte para terreno altoandino",
+      "stats.transport": "Transporte para rotas de altitude",
       "stats.response": "Resposta por WhatsApp",
       "stats.photo": "Paisagens para fotografia",
       "location.kicker": "Localizacao",
@@ -300,6 +306,7 @@ window.initLanguageSelector = function initLanguageSelector() {
     document.title = activeTranslations["meta.title"];
 
     currentLabel.textContent = languageLabels[activeLanguage];
+    currentName.textContent = languageNames[activeLanguage];
     currentFlag.className = `flag ${languageFlags[activeLanguage]}`;
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
@@ -336,7 +343,7 @@ window.initLanguageSelector = function initLanguageSelector() {
     trigger.setAttribute("aria-expanded", String(shouldOpen));
   }
 
-  if (!picker || !trigger || !currentLabel || !currentFlag || !menu || options.length === 0) {
+  if (!picker || !trigger || !currentLabel || !currentName || !currentFlag || !menu || options.length === 0) {
     return;
   }
 

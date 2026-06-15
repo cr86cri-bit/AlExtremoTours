@@ -65,20 +65,29 @@
 }
 
 .language-button {
-  gap: 8px;
-  height: 42px;
-  min-width: 108px;
-  padding: 0 10px;
+  gap: 7px;
+  height: 44px;
+  min-width: 150px;
+  padding: 0 11px;
   border: 2px solid rgba(255, 244, 223, 0.48);
-  background: rgba(18, 21, 18, 0.72);
+  background:
+    linear-gradient(180deg, rgba(27, 17, 12, 0.8), rgba(27, 17, 12, 0.94)),
+    url("../assets/images/aguayo-card-bg.png") center / cover;
   cursor: pointer;
 }
 
 .language-current,
-.language-option span:last-child {
+.language-option > span:nth-child(2) {
   font-size: 0.82rem;
   font-weight: 850;
   letter-spacing: 0.04em;
+}
+
+.language-name,
+.language-option small {
+  color: rgba(255, 250, 241, 0.72);
+  font-size: 0.72rem;
+  font-weight: 700;
 }
 
 .language-chevron {
@@ -102,13 +111,15 @@
   top: calc(100% + 8px);
   right: 0;
   z-index: 70;
-  width: 128px;
+  width: 176px;
   display: grid;
   gap: 5px;
   padding: 7px;
   border: 1px solid rgba(255, 244, 223, 0.22);
   border-radius: var(--radius);
-  background: #1d1510;
+  background:
+    linear-gradient(180deg, rgba(27, 17, 12, 0.94), rgba(27, 17, 12, 0.98)),
+    url("../assets/images/aguayo-card-bg.png") center / cover;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-6px);
@@ -125,7 +136,7 @@
   min-height: 38px;
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   border: 0;
   border-radius: 6px;
   padding: 0 8px;
@@ -141,53 +152,29 @@
 
 .flag {
   position: relative;
-  width: 28px;
-  height: 20px;
+  width: 30px;
+  height: 22px;
   flex: 0 0 auto;
   overflow: hidden;
-  border: 1px solid rgba(255, 250, 241, 0.45);
-  border-radius: 3px;
+  border: 1px solid rgba(255, 250, 241, 0.66);
+  border-radius: 7px;
   background: #fffaf1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 0 2px rgba(27, 17, 12, 0.2);
 }
 
 .flag-es {
-  background: linear-gradient(180deg, #aa151b 0 25%, #f1bf00 25% 75%, #aa151b 75% 100%);
+  background-image: url("https://flagcdn.com/w80/es.png");
 }
 
 .flag-us {
-  background: repeating-linear-gradient(180deg, #b22234 0 2px, #b22234 2px 4px, #fff 4px 6px, #fff 6px 8px);
-}
-
-.flag-us::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto auto 0;
-  width: 12px;
-  height: 10px;
-  background: #3c3b6e;
+  background-image: url("https://flagcdn.com/w80/us.png");
 }
 
 .flag-br {
-  background: #009b3a;
-}
-
-.flag-br::before {
-  content: "";
-  position: absolute;
-  inset: 4px 5px;
-  background: #ffdf00;
-  transform: rotate(45deg);
-}
-
-.flag-br::after {
-  content: "";
-  position: absolute;
-  left: 9px;
-  top: 5px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #002776;
+  background-image: url("https://flagcdn.com/w80/br.png");
 }
 
 .theme-toggle {
